@@ -86,9 +86,9 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
       Siga las instrucciones para insertar la imagen usando YASnippet
      #+end_src
 3. *Integrante 3*
-   - *Nombre completo:*
+   - *Nombre completo:* Jonathan Pincay
    - *Usuario institucional:*
-   - *Correo:*
+   - *Correo:* jonathan.pincay01@epn.edu.ec
    - *Certificado adjunto:* (sí / no)
      #+begin_src example
       Siga las instrucciones para insertar la imagen usando YASnippet
@@ -163,9 +163,9 @@ c. Para cumplir una norma estética del laboratorio
 
 d. Para que los tornillos no se magneticen
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ Se recomienda usar pulsera antiestática y alfombrilla antiestática debido a que el cuerpo humano puede acumular ciertas cantidades de electricidad estática, dicha carga puede llegar a dañar los componentes internos tales como el procesador o la memoria RAM, entre otros, al afectar los circuitos integrados en ellos. La pulsera antiestática se conecta a una toma de tierra para redirigir la carga hacia tierra y mantener equilibradas las cargas eléctricas y la alfombrilla evita que los componentes reciban cargas estáticas de la mesa de trabajo.
+- /Debate del grupo:/ Desde el inicio existió un consenso en la respuesta elegida ya que todos habíamos realizado el curso de cisco y allí se encontraba la respuesta clara sobre esta pregunta por lo que no hubo discrepancias al momento de elegir.
 ** Pregunta 5 --Erick
 Si al iniciar la computadora por primera vez un LED del panel frontal no funciona, ¿qué indica el manual de Cisco?
 
@@ -212,12 +212,11 @@ d. Por el estándar de codificación de color de los cables SATA
    |        |               |
 
 ** 3.2 Procedimiento de limpieza — Desktop --Jonathan 
-   1.
-   2.
-   3.
-   4.
-   5.
-
+   1. Primero se empieza con el desarmado para ello se apaga el equipo, se coloca el interruptor de la fuente de poder en 0 y se desconecta el cable de alimentación y se presiona el botón de encendido durante unos segundos para descargar la energía residual de los componentes.
+   2. Después se procede a retirar las tapas laterales del gabinete, se desconectan los cables de alimentación de la placa madre y la tarjeta gráfica para más seguridad y se extraen los componentes principales retirando los tornillos que los fijan al chasis.
+   3. Se utiliza una sopladora con mucho cuidado para remover el polvo del gabinete, se bloquean las aspas de los ventiladores y se limpian adecuadamente con un cepillo de cerdas suave y alcohol isopropílico.
+   4. Se limpia por completo la pasta térmica reseca del procesador y del disipador haciendo uso de un papel sin pelusas y del alcohol isopropílico. Cuando este limpio el chip se aplica una nueva gota de pasta térmica en el centro.
+   5. Finalmente se vuelve a colocar el disipador sobre el procesador y se ajustan los tornillos en forma de cruz alternando cada uno para equilibrar la presión, se reinstala la tarjeta gráfica en su ranura, se aseguran los tornillos al chasis y se reconectan los cables de energía para cerrar las tapas del gabinete.
 ** 3.3 Procedimiento de limpieza — Laptop --Erick
    1.
    2.
@@ -235,9 +234,11 @@ d. Por el estándar de codificación de color de los cables SATA
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
    - *¿Qué concepto corrigió o clarificó?* [Respuesta]
 
-** Integrante 3 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 3 Jonathan Pincay
+   - *¿Qué conocimiento nuevo obtuvo del curso?*
+El conocimiento que obtuve al realizar este curso fue que aprendí a identificar cada componente interno que existe dentro de un dispositivo, además de ello también aprendí el verdadero funcionamiento que realiza cada componente y como estos trabajan en equipo.
+   - *¿Qué concepto corrigió o clarificó?* 
+El concepto que corregí fue acerca las fuentes de poder ya que antes pensaba que mientras más cantidad de Watts tuviera sería mejor pero al realizar el curso entendí que si dicha fuente es una fuente genérica puede poner en riesgo los componentes de mi dispositivo y que por esa razón una fuente con certificación siempre sera mejor incluso si no tiene los mismos Watts.
      
 * Rúbrica de evaluación
 
