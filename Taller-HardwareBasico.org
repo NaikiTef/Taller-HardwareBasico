@@ -69,8 +69,8 @@ Para insertar la captura del certificado utilice YASnippet: Escriba
 escalado de la misma y una referencia. Finalmente inserte el enlace al
 archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
 1. *Integrante 1*
-   - *Nombre completo:*
-   - *Correo:*
+   - *Nombre completo:* Erick Sebastián Chicaiza Díaz
+   - *Correo:* erick.chicaiza01@epn.edu.ec
    - *Certificado adjunto:*
      #+begin_example
       #+caption: Certificado Integrante 1
@@ -111,7 +111,7 @@ Para cada pregunta:
 Al instalar una CPU en un socket LGA, ¿por qué es crítico alinear el
 pin 1 de la CPU con el pin 1 del socket?
 
-a. Para que el sistema arranque con mayor rapidez 
+a. Para que el sistema arranque con mayor rapidez
 
 b. Para evitar daños en la CPU y el socket al insertar incorrectamente
 
@@ -119,9 +119,13 @@ c. Porque el pin 1 es el único que conduce electricidad
 
 d. Para que el disipador quede centrado automáticamente
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b
+- /Justificación técnica:/ El socket esta diseñado para que la CPU sea colocada en una sola orientación, si
+  es que se llega a instalar de forma incorrecta, el procesador o los pines pueden resultar dañados de forma permanente.
+  El alinearlos correcamente evita que al cerrar el socket, este dueble o rompa los pines.
+- /Debate del grupo:/ Existio un consenso entre todo el grupo para  obtener esta respuesta. Todos recordamos que el poner
+  mal el CPU en el socket, este puede sufrir graves daños.
+  
 ** Pregunta 2 -- Nicole
 Al montar la placa madre en el gabinete, ¿cuál es la función de los separadores (standoffs)?
 
@@ -177,9 +181,12 @@ c. Quitar el conector, invertirlo y volver a conectarlo
 
 d. Desconectar y reconectar la fuente de poder
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ c
+- /Justificación técnica:/ Al ser un diodo LED, estos presentan una polaridad negativa y positiva en sus cables,
+  de modo que si se colocan con una polaridad incorrecta, estos no se van a encender. La solución a esto es girar el LED
+  180 grados para que quede polarizado correcamente.
+- /Debate del grupo:/ Hubo un pequeño debate entre la opción a y c, ya que por nuestro criterio, estas son dos opciones posibles
+  ante este problema que el LED no se encienda.
 
 ** Pregunta 6 --Nicole
 ¿Por qué una GPU puede requerir un conector de alimentación PCIe adicional de la fuente de poder?
@@ -219,17 +226,25 @@ d. Por el estándar de codificación de color de los cables SATA
    5.
 
 ** 3.3 Procedimiento de limpieza — Laptop --Erick
-   1.
-   2.
-   3.
-   4.
-   5.
+   1. Limpiar el gabinete exterior con un paño suave que no deje pelusa apenas humedecido con agua o con una solución de limpieza suave
+   2. Limpiar los orificios de ventilación y puertos de E/S con aire comprimido o una aspiradora no electrostática.
+   3. Limpiar la pantalla con un paño suave que no suelte pelusa ligeramente humedecido con un limpiador de pantallas de computadora.
+   4. Limpiar el teclado con un paño suave que no suelte pelusa ligeramente humedecido con agua o una solución de limpieza suave.
+   5. Limpiar la superficie del panel táctil suavemente con un paño suave que no suelte pelusa humedecido con un limpiador aprobado. No utilizar paños mojados.
 
 * Parte D. Aprendizaje obtenido -- Cada uno 
 
-** Integrante 1 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 1 [Erick Sebastián Chicaiza Díaz]
+   - *¿Qué conocimiento nuevo obtuvo del curso?*
+     Todos los temas tratados en el curso fueron nuevos para mi, aunque conocia algunos términos, no sabia donde usaban o donde aplicarlos. He logrado aprender sobre
+     el proceso de monstaje y desmontaje de una computadora de escritorio o laptop, además de la utilidad que tiene cada componente para el correcto funcionamiento de
+     estos equipos.
+     El modulo sobre dispositivos moviles como celulares tambien resulto interesante, ya que explicó como se dio el desarollo y evolución de dispositivos tan grandes
+     hasta ser tan pequeños que caben en nuestro bolsillo.
+     
+   - *¿Qué concepto corrigió o clarificó?*
+     Con este curso pude corregir un error que tenia al limpiar mis equipos con alcohol. Ahora se que esto puede resultar en daños en mis dispositivos, por lo que
+     obtendre recursos de limpieza adecuados.
 
 ** Integrante 2 [Nombre]
    - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
