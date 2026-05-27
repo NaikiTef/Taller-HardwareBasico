@@ -107,7 +107,7 @@ Para cada pregunta:
 
 *Criterio:* correcto/incorrecto + calidad del argumento técnico.
 
-** Pregunta 1 -- Erick
+** Pregunta 1 
 Al instalar una CPU en un socket LGA, ¿por qué es crítico alinear el
 pin 1 de la CPU con el pin 1 del socket?
 
@@ -126,7 +126,7 @@ d. Para que el disipador quede centrado automáticamente
 - /Debate del grupo:/ Existio un consenso entre todo el grupo para  obtener esta respuesta. Todos recordamos que el poner
   mal el CPU en el socket, este puede sufrir graves daños.
   
-** Pregunta 2 -- Nicole
+** Pregunta 2 
 Al montar la placa madre en el gabinete, ¿cuál es la función de los separadores (standoffs)?
 
 a. Sostener el peso de las tarjetas de expansión
@@ -141,7 +141,7 @@ d. Facilitar la alineación del panel de E/S trasero
 - /Justificación técnica:/ [a completar]
 - /Debate del grupo:/ [a completar]
 
-** Pregunta 3 -- Sebastian 
+** Pregunta 3 
 Según el manual de ensamblaje de Cisco, ¿cuándo NO es necesario aplicar pasta térmica al instalar el disipador sobre la CPU?
 
 a. Cuando la CPU es de alto rendimiento
@@ -170,7 +170,7 @@ d. Para que los tornillos no se magneticen
 - /Alternativa escogida:/ b
 - /Justificación técnica:/ Se recomienda usar pulsera antiestática y alfombrilla antiestática debido a que el cuerpo humano puede acumular ciertas cantidades de electricidad estática, dicha carga puede llegar a dañar los componentes internos tales como el procesador o la memoria RAM, entre otros, al afectar los circuitos integrados en ellos. La pulsera antiestática se conecta a una toma de tierra para redirigir la carga hacia tierra y mantener equilibradas las cargas eléctricas y la alfombrilla evita que los componentes reciban cargas estáticas de la mesa de trabajo.
 - /Debate del grupo:/ Desde el inicio existió un consenso en la respuesta elegida ya que todos habíamos realizado el curso de cisco y allí se encontraba la respuesta clara sobre esta pregunta por lo que no hubo discrepancias al momento de elegir.
-** Pregunta 5 --Erick
+** Pregunta 5 
 Si al iniciar la computadora por primera vez un LED del panel frontal no funciona, ¿qué indica el manual de Cisco?
 
 a. Reemplazar el conector por uno de repuesto
