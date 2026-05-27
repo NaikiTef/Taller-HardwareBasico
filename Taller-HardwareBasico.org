@@ -1,8 +1,8 @@
 
 #+TITLE: Taller - Conceptos Básicos de Hardware y Ensamblaje de Computadores
 #+SUBTITLE: ICCD332 Arquitectura de Computadores
-#+AUTHOR: [Nombres de los integrantes del grupo]
-#+DATE: [Fecha de entrega]
+#+AUTHOR: Tiffany Montaluisa, Erick Chicaiza, Sebastian Zuñiga, Jonathan Pincay
+#+DATE: 2026-05-26
 #+OPTIONS: toc:nil num:t
 #+LANGUAGE: es
 
@@ -25,13 +25,11 @@
 #+LATEX_HEADER: \usepackage{tabularx}
 #+LATEX_HEADER: \usepackage{longtable}
 
-#+cite_export: biblatex
-#+LATEX_HEADER: \usepackage[backend=biber, style=ieee]{biblatex}
-#+BIBLIOGRAPHY: ../bibliography/bibliography.bib
+#+LATEX_HEADER: %# \usepackage[backend=biber, style=ieee]{biblatex}
 
 #+begin_export latex
-\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}\\
-ESCUELA POLITECNICA NACIONAL\\FACULTAD DE INGENIERIA DE SISTEMAS\\
+\fancyhead[C]{\includegraphics[scale=0.05]{../images/logoEPN.jpg}
+ESCUELA POLITECNICA NACIONAL//FACULTAD DE INGENIERIA DE SISTEMAS
 ARQUITECTURA DE COMPUTADORES}
 \thispagestyle{fancy}
 #+end_export
@@ -71,29 +69,26 @@ archivo usando ~C-c C-l~ o usando ~[[./carpeta-certificados/cert-int1.pdf]]~
 1. *Integrante 1*
    - *Nombre completo:* Erick Sebastián Chicaiza Díaz
    - *Correo:* erick.chicaiza01@epn.edu.ec
-   - *Certificado adjunto:*
-     #+begin_example
-      #+caption: Certificado Integrante 1
-      #+attr_latex: scale=0.75
-      #+label: fig:certificado-integrante-1
-      [[./carpeta-certificados/certificado-integrante1.pdf]]
-     #+end_example
+     #+CAPTION: Certificado Integrante 1
+     [[file:carpeta-certificados/cert-Erick Chicaiza.pdf][Certificado Erick Chicaiza]]
 2. *Integrante 2*
-   - *Nombre completo:*
-   - *Correo:*
+   - *Nombre completo:* Tiffany Nicole Montaluisa Robalino
+   - *Correo:* tiffany.montaluisa@epn.edu.ec
    - *Certificado adjunto:*
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
+   #+CAPTION: Certificado Integrante 2
+   [[file:carpeta-certificados/cert-Tiffany-Montaluisa.pdf][Certificado TIffany Montaluisa]]
 3. *Integrante 3*
-   - *Nombre completo:* Jonathan Pincay
-   - *Usuario institucional:*
+   - *Nombre completo:* Jonathan Wiliam Pincay Reyes
    - *Correo:* jonathan.pincay01@epn.edu.ec
-   - *Certificado adjunto:* (sí / no)
-     #+begin_src example
-      Siga las instrucciones para insertar la imagen usando YASnippet
-     #+end_src
-     
+   - *Certificado adjunto:*
+    #+CAPTION: Certificado Integrante 3
+    [[file:carpeta-certificados/cert-Jonathan Pincay.pdf][Certificado Jonathan Pincay]]
+3. *Integrante 4*
+   - *Nombre completo:* Sebastian Josue Zuñiga Mendoza
+   - *Correo:* sebastian.zuniga@epn.edu.ec
+   - *Certificado adjunto:*
+    #+CAPTION: Certificado Integrante 4
+    [[file:carpeta-certificados/cert-Sabatian Zuñiga.pdf][Certificado Sebestian Zuñiga]]
 * Parte B. Cuestionario argumentado grupal
 
 Para cada pregunta:
@@ -137,9 +132,19 @@ c. Mejorar la ventilación de la placa madre
 
 d. Facilitar la alineación del panel de E/S trasero
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ Crean una separación física necesaria entre
+  la placa madre y la bandeja de montaje metálica del
+  gabinete,evitando que los circuito o componentes en la parte
+  inferior de la placa entren en contacto con el metal, lo cual
+  causaria cortocircuitos que dañarían el hardware.
+- /Debate del grupo:/ Nuestro grupo concluyó que los separadores
+  suelen aparecer como accesorios opcionales son muy importantes para
+  la integridad a largo plazo del sistema. Sin embargo, al tener una
+  mala instalación podemos causar cortocircuitos inmediatos, sino que
+  también puede generar puntos de presión excesivos que pueden
+  deformar la placa madre al apretar los tornillos dañando la pistab
+  interna.
 
 ** Pregunta 3 
 Según el manual de ensamblaje de Cisco, ¿cuándo NO es necesario aplicar pasta térmica al instalar el disipador sobre la CPU?
@@ -152,9 +157,19 @@ c. Cuando la CPU tiene más de un año de uso
 
 d. Cuando el gabinete tiene buena ventilación
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ La función de la pasta térmica es eliminar
+  las burbujas de aire del microscópicas entre la superficie del
+  procesador y la base del disipador garantizando una transferencia de
+  calor eficiente. 
+- /Debate del grupo:/ El grupo concluyó que el riesgo de omitir el
+  compuesto térmico es crítico, ya que deriva en una ineficiencia
+  severa en la transferencia de calor, pudiendo causar thermal
+  throttling o fallos permanentes por sobrecalentamiento.Asimismo, el
+  uso de pastas incorrectas puede provocar cortocircuitos. Por lo
+  tanto, se enfatiza como estándar en ensamblajes modernos la
+  inspección visual obligatoria de la base del disipador previo a la
+  instalación 
 
 ** Pregunta 4 --Jonathan
 ¿Por qué se recomienda usar pulsera antiestática y alfombrilla antiestática al manipular componentes internos?
@@ -199,24 +214,39 @@ c. Porque el conector PCIe solo funciona con tarjetas de red
 
 d. Por el estándar de codificación de color de los cables SATA
 
-- /Alternativa escogida:/ [a completar]
-- /Justificación técnica:/ [a completar]
-- /Debate del grupo:/ [a completar]
+- /Alternativa escogida:/ b 
+- /Justificación técnica:/ La ranura PCIe en la placa base tiene un
+  límite de suministro de energía por lo que la GPU de alto
+  rendimiento superan el consumo bajo carga, por lo que requiere
+  conectores de alimentación PCIe aicionales conectados directamente
+  desde la fuente de poder para garantizar un funcionamiento estable
+  sin sobrecarga de la placa madre.
+- /Debate del grupo:/ Nuestro grupo analizó que el diseño de las
+  fuentes de poder modulares facilitan la gestión de cables para las
+  tarjetas de alta demanda. A pesar de que también es bastante
+  tentador usar adaptadores siempre es mejor utilizar los cables
+  dedicados de la fuente para evitar sobrecalentamiento en cables por
+  la alta corriente.
 
 * Parte C. Mantenimiento de computadores
 
-** 3.1 Insumos para mantenimiento preventivo --Sebastian
+** 3.1 Insumos para mantenimiento preventivo --Sebastian Zuñiga
    Liste al menos seis insumos y describa para qué sirve cada
    uno. Revise el siguiente [[https://youtu.be/3ri1BMV7XTM?si=bjYoDUUKuMWwj4Qg][vídeo]].
 
-   | Insumo | Uso principal |
-   |--------+---------------|
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
-   |        |               |
+   | Insumo               | Uso principal                                                                               |
+   |----------------------+---------------------------------------------------------------------------------------------|
+   | Alcohol isopropílico | Remueve la pasta térmica y el thermal putty que se han endurecido, así como para            |
+   |                      | realizar la limpieza del PCB y el disipador.                                                |
+   | Cinta Kapton         | Se coloca entre la salida del ventilador y las aletas del disipador para sellar el          |
+   |                      | flujo de aire, permitiendo aprovechar el aire empujado en la refrigeración.                 |
+   | Espuma limpiadora    | Limpia la suciedad incrustada en lugares difíciles, como las aspas del rotor del            |
+   | "Delfa Famkeip Seco" | ventilador.                                                                                 |
+   | Pasta térmica        | Permite rellenar microporos en superficies de chips y expulsa el aire en ellos, de modo que |
+   | "Coldium Edge"       | el calor viaje rápidamente al disipador.                                                    |
+   | Thermal Putty        | Rellena la brecha existente entre los componentes de la placa y el disipador metálico.      |
+   | Soplador manual      | Acelera el proceso de secado, forzando que salga el aire y la humedad en rincones difíciles |
+   |                      |                                                                                             |
 
 ** 3.2 Procedimiento de limpieza — Desktop --Jonathan 
    1. Primero se empieza con el desarmado para ello se apaga el equipo, se coloca el interruptor de la fuente de poder en 0 y se desconecta el cable de alimentación y se presiona el botón de encendido durante unos segundos para descargar la energía residual de los componentes.
@@ -245,16 +275,42 @@ d. Por el estándar de codificación de color de los cables SATA
      Con este curso pude corregir un error que tenia al limpiar mis equipos con alcohol. Ahora se que esto puede resultar en daños en mis dispositivos, por lo que
      obtendre recursos de limpieza adecuados.
 
-** Integrante 2 [Nombre]
-   - *¿Qué conocimiento nuevo obtuvo del curso?* [Respuesta]
-   - *¿Qué concepto corrigió o clarificó?* [Respuesta]
+** Integrante 2 [Tiffany Nicole Montaluisa Robalino]
+   - *¿Qué conocimiento nuevo obtuvo del curso? Fue bastante útil
+
+     debido que no solo se baso en un curso de cuidado de computadoras
+
+     de escritorio más bien también aporto con información para el
+
+     cuidado de diferentes dispositivos electronicos. Fue bastante
+
+     práctico y completo para poder empezar con el mantenimiento
+
+     preventivo a nuestras propias pc sin necesidad de pagar un
+
+     técnico.
+   - *¿Qué concepto corrigió o clarificó?* Exactamente lo que tenía
+
+     que ver con la placa base por lo que no conocía correctamente
+
+     como se daba las conexiones de cada componente además como se
+
+     colocaba de forma correcta la CPU en la placa base.
 
 ** Integrante 3 Jonathan Pincay
    - *¿Qué conocimiento nuevo obtuvo del curso?*
 El conocimiento que obtuve al realizar este curso fue que aprendí a identificar cada componente interno que existe dentro de un dispositivo, además de ello también aprendí el verdadero funcionamiento que realiza cada componente y como estos trabajan en equipo.
    - *¿Qué concepto corrigió o clarificó?* 
 El concepto que corregí fue acerca las fuentes de poder ya que antes pensaba que mientras más cantidad de Watts tuviera sería mejor pero al realizar el curso entendí que si dicha fuente es una fuente genérica puede poner en riesgo los componentes de mi dispositivo y que por esa razón una fuente con certificación siempre sera mejor incluso si no tiene los mismos Watts.
-     
+
+* Integrante 4  [Sebastian Josue Zuñiga Mendoza]
+   - *¿Qué conocimiento nuevo obtuvo del curso?
+     Aprendí sobre los componentes de la caja del CPU, de los cuales ya había aprendido en clases pero nunca los había visto ya en la placa madre del computador. Además,
+     no conocía el proceso completo de armar y desarmar una caja de PC, aunque siempre me había interesado dado que me gustaría hacerlo con algún equipo personal en el
+     futuro.
+   - *¿Qué concepto corrigió o clarificó?*
+     Me interesó bastante el tema de las medidas de seguridad que se debe tener al trabajar con estos dispositivos, dado que muchas de ellas no las había considerado en
+     el mantenimiento que le doy a mi computadora portátil y a mi teléfono inteligente. Por ejemplo, no sabía que el alcohol puede dañar la pantalla táctil de los celulares.
 * Rúbrica de evaluación
 
   | Criterio                               | Puntaje máximo |
@@ -270,24 +326,10 @@ Para insertar una referencia a un recurso bibliográfico
 1. Puede actualizar el archivo ~../bibliography/bibliography.bib~
 2. Escribir en formato **BibTeX** el recurso bibliográfico
 3. Verifique la siguiente configuración al encabezado:
-   #+begin_src org
-   #+cite_export: biblatex
-   #+LATEX_HEADER: \usepackage[backend=biber, style=ieee]{biblatex}
-   #+BIBLIOGRAPHY: ../bibliography/bibliography.bib
-   #+end_src
 4. Usar ~M-x org-cite-insert~ para insertar una cita. Aparecerá una
-   lista. Use los cursores para seleccionar la cita. Ejecute ~C-RET~: /De acuerdo con
-   [cite:@ledin2022modern], la arquitectura ...../
-5. Revise que al final del documento exista ~#+print_bibliography:~
-6. **Sugerencia:** Para evitar repetir varias veces el proceso de
-   exportación, es recomendable cambiar el compilador de \LaTeX a
-   ~latexmk~. Para esto:
-   - ~sudo apt install latexmk~
-   - Revise en el encabezado del ~.org~ que el compilador escogido sea
-     ~#+LATEX_COMPILER: latexmk~. También puede modificar el archivo
-     ~init.el~ para indicar qué compilador se usa para exportar de
-     ~.org~ a /LaTeX/:
-     #+begin_src elisp
+   lista. Use los cursores para seleccionar la cita. Ejecute ~C-RET~: 
+5. Revise que al final del documento exista
+#+begin_src elisp
 ;; 4.7b Proceso de compilación con latexmk para Org-export
 (with-eval-after-load 'ox-latex
   (setq org-latex-pdf-process
@@ -298,21 +340,20 @@ Para insertar una referencia a un recurso bibliográfico
   (setq org-cite-export-processors
         '((latex biblatex)
           (t basic))))
+#+end_src
 
-     #+end_src
-* Verificación de Entregables [0%]:
+* Verificación de Entregables [100%]:
 Ejecute ~C-c C-c~ sobre los ítems de tarea según se hayan cumplido o
 no. Si un ítem no pudo realizarse apunte en la siguiente sección las
 razones al respecto.
-- [ ] Los enlaces a los certificados en el documento ~.org~ funcionan.
-- [ ] Resolución completa del Cuestionario2.
-- [ ] Revisión del vídeo sobre mantenimiento a computador ASUS. 
-- [ ] Tutorial de Comandos Emacs realizado.
-- [ ] Lista de insumos para mantenimiento completa.
-- [ ] Procedimiento de mantenimiento para desktop completo.
-- [ ] Procedimiento de mantenimiento para laptop completo.
-- [ ] Revisión de ortografía con ~ispell-buffer~ en el buffer
-- [ ] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
-- [ ] Subir al aula virutal archivo ~.org~ y ~.pdf~
-
-#+print_bibliography:
+- [X] Los enlaces a los certificados en el documento ~.org~ funcionan.
+- [X] Resolución completa del Cuestionario2.
+- [X] Revisión del vídeo sobre mantenimiento a computador ASUS. 
+- [X] Tutorial de Comandos Emacs realizado.
+- [X] Lista de insumos para mantenimiento completa.
+- [X] Procedimiento de mantenimiento para desktop completo.
+- [X] Procedimiento de mantenimiento para laptop completo.
+- [X] Revisión de ortografía con ~ispell-buffer~ en el buffer
+- [X] Generación de Archivo PDF ~M-x org-latex-export-to-pdf~
+- [X] Subir al aula virutal archivo ~.org~ y ~.pdf~
+  
